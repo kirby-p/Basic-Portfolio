@@ -1,3 +1,4 @@
+
 a:link, a:visited {
     text-decoration: none;
     color: #777;
@@ -23,22 +24,25 @@ img.profile {
 	padding: 10px 30px 10px 0px;
 	vertical-align: top;
 }
-img.portfolio-left {
-	float: left;
-	height: auto;
-	width: 45%;
-	padding: 20px 0px 20px 0px;
+.floatLeft {
+	float:left;
 }
-img.portfolio-right {
+.floatRight {
 	float: right;
-	height: auto;
-	width: 45%;
-	padding: 20px 0px 20px 0px;
 }
-
-#submit {
+div.relative {
+	position: relative;
+	margin-bottom: 40px;
+}
+div.absolute {
+	position: absolute;	
 	box-sizing: border-box;
-
+	height: 50px;
+	width: 100%;
+	background: #4aaaa5;
+	bottom: 20px;	
+	text-align: center;
+	padding: 15px;
 }
 header {
 	overflow: auto;
@@ -46,7 +50,6 @@ header {
 	border-style: solid;
 	border-color: #ccc;
 	border-bottom-width: 3px;
-
 }
 
 h1, h2, h3 {
@@ -67,7 +70,10 @@ h3 {
 	font-size: 20px;
 	color: #4aaaa5;
 }
-
+h4 {
+	color: white;
+	font-size: 20px;
+}
 #nav, p {
 	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 	color: #777;
@@ -116,11 +122,18 @@ p {
 	padding: 40px 30px 40px 30px;
 	background: #fff;
 }
-
+input[type=text]{
+	box-sizing: border-box;
+	width: 100%;
+}
+textarea {
+	box-sizing: border-box;
+	width: 100%;
+}
 #social-icons{
-	overflow: auto;
-	height: auto;
-	width: 270px;
+	/*overflow: auto;*/
+/*	height: auto;
+*/	width: 270px;
 	float: left;
 	text-align: center;
 	box-sizing: border-box;
@@ -132,6 +145,7 @@ p {
 	background: #fff;
 
 }	
+
 footer {
 	clear: both;
 	text-align: center;
@@ -141,7 +155,109 @@ footer {
 	border-color: #4aaaa5;
 	background: #666;
 	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-	color: #777;
+	color: white;
 	padding: 40px 0px 40px 0px;
 	font-size: 12px;
+}
+@media screen and (max-width: 980px) {
+	#nameblock {
+		margin-left: 100px;
+	}
+	#main {
+		clear: both;
+		width: 45%;
+		margin-left: 100px;
+	}
+	#social-icons {
+		width: 30%;
+		margin-right: 100px;
+	}
+	div.relative {
+		width: 100%;
+	}
+	img.links {
+		width: 100%;
+	}
+	img.profile {
+		width: 100%;
+	}
+	#nav {
+		float: right;
+		margin-left: auto;
+		margin-right: 90px;
+	}
+}
+@media screen and (max-width: 768px) {
+	#nameblock {
+		margin-left: 50px;
+	}
+
+	#main {
+		clear: both;
+		margin-left: 50px;
+		margin-right: 50px;
+		width: auto;
+	}
+	#social-icons {
+		clear: both;
+		width: 668px;
+		margin-left: 50px;
+		margin-right: 50px;
+		text-align: left;
+	}
+	img.profile {
+		width: 40%;
+	}
+	img.icon {
+		width: 10%;
+	}	
+	div.relative {
+		width: 47%;
+		margin-bottom: 20px;
+	}
+	img.links {
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 640px) {
+	#nameblock {
+		position: static;
+		width: 100%;
+		margin: 0px;
+	}
+	#nav {
+		clear: both;
+		position: static;
+		width: 100%;
+		margin: 0px;
+	}	
+	img.profile {
+		width: 100%;
+	}
+	#main {
+		clear: both;
+		margin-left: 20px;
+		margin-right: 20px;
+		width: auto;
+	}
+	#social-icons {
+		clear: both;
+		width: 600px;
+		margin-left: 20px;
+		margin-right: 20px;
+		text-align: left;
+	}
+	div.relative {
+		width: 100%;
+	}
+	img.links {
+		width: 100%;
+	}
+	img.profile {
+		width: 100%;
+	}
+	h4 {
+		font-size: 25px;
+	}
 }

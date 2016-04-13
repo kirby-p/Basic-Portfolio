@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Contact</title>
 </head>
 <body>
@@ -25,14 +27,15 @@
 			<hr>
 			<br>
 			<form action="MAILTO:kirby.pagunsan@gmail.com" method="post" enctype="text/plain">
-				<p>Name:</p><br>
-				<input type="text" name="name" placeholder="John Smith" size="96"><br>
-				<p>E-mail:</p><br>
-				<input type="text" name="mail" placeholder="example@gmail.com" size="96"><br>
-				<p>Message:</p><br>
-				<input type="text" name="message" style="height: 200px;" size="96" align="top"><br><br>
+				<p>Name:</p>
+				<input type="text" name="name" placeholder="John Smith"><br><br>
+				<p>E-mail:</p>
+				<input type="text" name="mail" placeholder="example@gmail.com"><br><br>
+				<p>Message:</p>
+<!-- 				<input type="text" name="message" align="top"><br><br>
+ -->				<textarea rows="10" cols="100%" name="message"></textarea>
 				<input type="submit" value="Send">
-				<input type="reset" value="Reset">
+				<input type="reset" value="Reset">				
 			</form>
 		</section>
 		<section id="social-icons">
